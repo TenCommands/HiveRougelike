@@ -1,5 +1,7 @@
-let mod = new Module("shop","HRL: Shop","Opens the shop",76);
+let mod = new Module("shop","HRL: Shop","Opens the shop",1);
 
+let openKey = mod.addKeySetting("openKey","Enable Key","",76)
+let closeKey = mod.addKeySetting("closeKey","Disable Key","",79)
 let radius = mod.addNumberSetting("radius","Radius","",0,10,1,10);
 let bgColor = mod.addColorSetting("bgColor","Background Color","Background color of notifications", new Color(0,0,0,0.5));
 
@@ -42,28 +44,31 @@ cancelKeys = [
 ]
 exitKeys = [
     game.getInputBinding("menuCancel"),
-    //mod.key,
+    closeKey.getValue(),
     27
 ]
 
 client.on("key-press", k => {
-    if(game.isInUI || exitKeys.indexOf(k.keyCode) >= 0){
+    if(mod.isEnabled() && exitKeys.indexOf(k.keyCode) >= 0){
+        k.cancel = true
         mod.setEnabled(false)
-        k.cancel
+        game.captureCursor()
         return
     }
-    if(mod.isEnabled && cancelKeys.indexOf(k.keyCode) >= 0){
+    if(mod.isEnabled() && cancelKeys.indexOf(k.keyCode) >= 0){
         k.cancel = true
+        return
+    }
+    if(!game.isInUI() && !mod.isEnabled() && k.keyCode == openKey.getValue()){
+        k.cancel = true
+        mod.setEnabled(true)
         game.releaseCursor()
         return
     }
-    /*if(!game.isInUI() && mod.isEnabled() && cancelKeys.indexOf(k.keyCode) >= 0){
-        k.cancel = true
-        game.releaseCursor()
-        return
-    }else if(!game.isInUI() && mod.isEnabled() && exitKeys.indexOf(k.keyCode) >= 0){
-        mod.setEnabled(false)
-        k.cancel = true
-        //game.captureCursor()
-    }*/
+})
+
+client.on("click", e => {
+    if(mod.isEnabled()){
+        e.cancel = true
+    }
 })

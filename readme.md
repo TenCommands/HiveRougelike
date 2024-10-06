@@ -15,7 +15,7 @@ Turning Hive Bedwars into a rougelike.
         - [ ] Bounty Tracker
         - [ ] Game Point Tracker
 - [ ] Back-end
-    - [ ] GUI Movement Cancel
+    - [x] GUI Movement Cancel
     - [ ] Hud Modules
         - [ ] Notification Sending
         - [ ] Effect Applier
@@ -25,6 +25,7 @@ Turning Hive Bedwars into a rougelike.
     - [ ] Settings
     - [ ] Save System
     - [ ] Point Granting
+    - [ ] Event Detection
 - [ ] Advertising & Sharing
     - [ ] Content Creators
     - [ ] Discord Servers
