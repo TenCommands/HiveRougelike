@@ -47,3 +47,16 @@ Turning Hive Bedwars into a rougelike. This plugin is an extremely complicated a
 - :white_square_button: Github
     - :ballot_box_with_check: Better Description
     - :white_square_button: Make a release
+
+---
+##### This uses heavily modified code from:
+> [GlaxiteUtils](https://github.com/LatiteScripting/Scripts/tree/master/Plugins/GalaxiteUtils): 1unar_Eclipse
+
+> [KillNotif](https://github.com/LatiteScripting/Scripts/tree/master/Plugins/KillNotif): Plextora
+
+> [BedwarsStats](https://github.com/LatiteScripting/Scripts/tree/master/Plugins/BedwarsStats): Jax
+
+> [DoubleClickPrevent](https://github.com/LatiteScripting/Scripts/tree/master/Plugins/DoubleClickPrevent): 1unar_Eclipse
+
+---
+##### This project was only doable because of the amazing people in the [Latite Discord Server](https://discord.com/invite/GpV3w5tyBs)

@@ -1,4 +1,4 @@
-let mod = new Module("shop","HRL: Shop","Opens the shop",1);
+let mod = new Module("hrl_shop","HRL: Shop","Opens the shop",1);
 
 let openKey = mod.addKeySetting("openKey","Enable Key","",76)
 let closeKey = mod.addKeySetting("closeKey","Disable Key","",79)
@@ -12,9 +12,11 @@ const width = screenSize["x"]
 const height = screenSize["x"]
 
 let mainRect = new Rect(width * 0.15, height * 0.05, width * 0.85, height * 0.5)
+let backRect = new Rect(width * 0.15-5, height * 0.05-5, width * 0.85+5, height * 0.5+5)
 
 client.on("render2d", () => {
     if(mod.isEnabled()){
+        graphics.fillRect(backRect,bgColor.getValue(),radius.getValue() * 5);
         graphics.fillRect(mainRect,bgColor.getValue(),radius.getValue() * 5);
     }
 })
@@ -42,14 +44,9 @@ cancelKeys = [
     game.getInputBinding("emote"),
     game.getInputBinding("togglePerspective")
 ]
-exitKeys = [
-    game.getInputBinding("menuCancel"),
-    closeKey.getValue(),
-    27
-]
 
 client.on("key-press", k => {
-    if(mod.isEnabled() && exitKeys.indexOf(k.keyCode) >= 0){
+    if(mod.isEnabled() && [game.getInputBinding("menuCancel"),closeKey.getValue(),27].indexOf(k.keyCode) >= 0){
         k.cancel = true
         mod.setEnabled(false)
         game.captureCursor()

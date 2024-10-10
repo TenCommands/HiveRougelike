@@ -1,7 +1,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.send = exports.notifTitle = exports.notifDescription = exports.notifImage = exports.notifTime = void 0;
 
-let mod = new HudModule("notif","HRL: Notification","Notifications for the Hive Rougelike",0,true);
+let mod = new HudModule("hrl_notif","HRL: Notification","Notifications for the Hive Rougelike",0,true);
 
 let bgColor = mod.addColorSetting("bgColor","Background Color","Background color of notifications", new Color(0,0,0,0.5));
 let displayTime = mod.addNumberSetting("displayTime","Display Time","How long the notification stays on screen for",0.2,10,0.1,1);
