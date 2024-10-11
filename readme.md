@@ -37,6 +37,14 @@ Turning Hive Bedwars into a rougelike. This plugin is an extremely complicated a
     - :white_square_button: Settings
     - :white_square_button: Save System
     - :ballot_box_with_check: Event Detection
+      - :white_check_mark: Kill Event
+      - :white_check_mark: Final Kill Event
+      - :white_square_button: Destroy Bed Event
+      - :white_check_mark: Win Event
+      - :white_check_mark: Death Match Event
+      - :white_check_mark: Complete Challenge Event
+      - :white_square_button: Eliminate Bounty Event
+      - :white_square_button: Streak End Event
     - :ballot_box_with_check: Point Granting
 - :white_square_button: Advertising & Sharing
     - :white_square_button: Content Creators
