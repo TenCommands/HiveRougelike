@@ -1,9 +1,9 @@
-client.on("load-script", e => {
-    clientMessage(e.scriptName)
-    //if(client.getModuleManager().getModuleByName("hrl_core").isEnabled()){
-    //    clientMessage("core enabled")
-    //}
-})
+//client.on("load-script", e => {
+//    clientMessage(e.scriptName)
+//    //if(client.getModuleManager().getModuleByName("hrl_core").isEnabled()){
+//    //    clientMessage("core enabled")
+//    //}
+//})
 
 var _a, _b;
 
