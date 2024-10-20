@@ -1,4 +1,6 @@
-import { sendNotif, notifTitle, notifDescription, notifImage, notifTime } from "./notif/func";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+let notif_1 = require("./notif/func");
 
 var _a, _b;
 
@@ -21,19 +23,19 @@ client.on("receive-chat", e => {
     if(e.isChat && ((_a = game.getLocalPlayer()) === null || _a === void 0 ? void 0 : _a.isValid())){
         if (msg.match(kill)) {
             clientMessage(`Kill event triggered`)
-            sendNotif("Kill", msg, "assets/bounty.png")
+            notif_1.sendNotif("Kill", msg, "assets/bounty.png")
         }
         if (msg.match(finalKill) && !msg.match(selfEliminate)) {
             clientMessage(`FinalKill event triggered`)
-            sendNotif("FinalKill", msg, "assets/bounty.png")
+            notif_1.sendNotif("FinalKill", msg, "assets/bounty.png")
         }
         if (msg.match(challenge)) {
             clientMessage(`Challenge event triggered`)
-            sendNotif("Challenge", msg, "assets/bounty.png")
+            notif_1.sendNotif("Challenge", msg, "assets/bounty.png")
         }
         if (msg.match(suddenDeath)){
             clientMessage(`SuddenDeath event triggered`)
-            sendNotif("SuddenDeath", msg, "assets/bounty.png")
+            notif_1.sendNotif("SuddenDeath", msg, "assets/bounty.png")
         }
     }
 });

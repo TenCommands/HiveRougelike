@@ -1,4 +1,6 @@
-import { sendNotif, notifTitle, notifDescription, notifImage, notifTime } from "./func";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+let notif_1 = require("./func");
 
 let mod = new HudModule("hrl_notif","HRL: Notification","Notifications for the Hive Roguelike",0,true);
 
@@ -18,8 +20,8 @@ mod.setRect(mainRect);
 mod.on("render", (isPreview, isEditor) => {
     if(notifTime > 0){
         graphics.fillRect(mainRect,bgColor.getValue(),radius.getValue() * 5);
-        graphics.drawText(titlePos, notifTitle, 24, Color.WHITE);
-        graphics.drawTextFull(descriptionRect, notifDescription, 14, Color.WHITE, 0, 0);
-        graphics.drawTexture(notifImage, descriptionPos, 60, 60, Color.WHITE)
+        graphics.drawText(titlePos, notif_1.notifTitle, 24, Color.WHITE);
+        graphics.drawTextFull(descriptionRect, notif_1.notifDescription, 14, Color.WHITE, 0, 0);
+        graphics.drawTexture(notif_1.notifImage, descriptionPos, 60, 60, Color.WHITE)
     }
 });

@@ -7,11 +7,6 @@ exports.notifDescription = "Description"
 exports.notifImage = Texture.load("assets/friends.png")
 exports.notifTime = 0
 
-//exports.notifTitle = notifTitle
-//exports.notifDescription = notifDescription
-//exports.notifImage = notifImage
-//exports.notifTime = notifTime
-
 function sendNotif(title, description, image){
     exports.notifTime = title
     exports.notifDescription = description
