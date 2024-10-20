@@ -1,7 +1,7 @@
 // mods
-let core = require("mods/core");
+let core = require("lite/mods/core");
 /*let notif = require("notif");*/
-let shop = require("mods/shop");
+let shop = require("lite/mods/shop");
 // systems
 let events = require("systems/events");
 let novote = require("systems/novote");
