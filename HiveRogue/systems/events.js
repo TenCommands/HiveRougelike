@@ -1,3 +1,5 @@
+const { sendNotif, notifTitle, notifDescription, notifImage, notifTime } = require("./func");
+
 //client.on("load-script", e => {
 //    clientMessage(e.scriptName)
 //    //if(client.getModuleManager().getModuleByName("hrl_core").isEnabled()){
@@ -26,15 +28,19 @@ client.on("receive-chat", e => {
     if(e.isChat && ((_a = game.getLocalPlayer()) === null || _a === void 0 ? void 0 : _a.isValid())){
         if (msg.match(kill)) {
             clientMessage(`Kill event triggered`)
+            sendNotif("Kill", msg, "assets/bounty.png")
         }
         if (msg.match(finalKill) && !msg.match(selfEliminate)) {
             clientMessage(`FinalKill event triggered`)
+            sendNotif("FinalKill", msg, "assets/bounty.png")
         }
         if (msg.match(challenge)) {
             clientMessage(`Challenge event triggered`)
+            sendNotif("Challenge", msg, "assets/bounty.png")
         }
         if (msg.match(suddenDeath)){
             clientMessage(`SuddenDeath event triggered`)
+            sendNotif("SuddenDeath", msg, "assets/bounty.png")
         }
     }
 });

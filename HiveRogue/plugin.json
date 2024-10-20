@@ -1,7 +1,7 @@
 {
     "author": "TenCommands",
     "description": "Turns Hive Bedwars into a Roguelike or Roguelite!",
-    "lastLaunch": false,
+    "lastLaunch": true,
     "name": "HiveRogue",
     "version": "0.0.1"
 }

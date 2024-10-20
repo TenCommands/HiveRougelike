@@ -1,3 +1,5 @@
+const { sendNotif, notifTitle, notifDescription, notifImage, notifTime } = require("./func");
+
 let mod = new HudModule("hrl_notif","HRL: Notification","Notifications for the Hive Roguelike",0,true);
 
 let bgColor = mod.addColorSetting("bgColor","Background Color","Background color of notifications", new Color(0,0,0,0.5));
@@ -13,19 +15,6 @@ let descriptionPos = new Vector2(10, 10)
 
 mod.setRect(mainRect);
 
-exports.notifTitle = "Title"
-exports.notifDescription = "Description"
-exports.notifImage = Texture.load("assets/friends.png")
-exports.notifTime = 0
-
-function send(title, description, image){
-    exports.notifTime = title
-    exports.notifDescription = description
-    exports.notifImage = Texture.load(image)
-    exports.notifTime = displayTime.getValue() * 20
-}
-exports.send = send;
-
 mod.on("render", (isPreview, isEditor) => {
     if(notifTime > 0){
         graphics.fillRect(mainRect,bgColor.getValue(),radius.getValue() * 5);
@@ -34,9 +23,3 @@ mod.on("render", (isPreview, isEditor) => {
         graphics.drawTexture(notifImage, descriptionPos, 60, 60, Color.WHITE)
     }
 });
-
-client.on("world-tick", () => {
-    if(exports.notifTime > 0){
-        exports.notifTime--
-    }
-})
