@@ -1,12 +1,6 @@
 ## Description
 Turning Hive Bedwars into a roguelike. This plugin is an extremely complicated and probably the most advanced plugin to ever be made for [Latite Client](https://latite.net) other than maybe [GlaxiteUtils](https://github.com/LatiteScripting/Scripts/tree/master/Plugins/GalaxiteUtils). This plugin aims to increase the skill ceiling of Hive Bedwars by turning it into a roguelike or a roguelite depending on what you choose.
 
----
-## Requirements
-- Minecraft: Bedrock Edition
-- A working bedrock edition account
-- Latite Client [here](https://latite.net)
-
 --- 
 ## Todo
 :white_square_button: = not done
