@@ -1,3 +1,7 @@
+"use strict"
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.notifTitle = exports.notifDescription = exports.notifImage = exports.notifTime = exports.sendNotif = void 0;
+
 let notifTitle = "Title"
 let notifDescription = "Description"
 let notifImage = Texture.load("assets/friends.png")
@@ -16,10 +20,8 @@ client.on("world-tick", () => {
     }
 })
 
-module.exports = {
-    sendNotif,
-    notifTitle,
-    notifDescription,
-    notifImage,
-    notifTime
-};
+exports.notifTitle = notifTitle
+exports.notifDescription = notifDescription
+exports.notifImage = notifImage
+exports.notifTime = notifTime
+exports.sendNotif = sendNotif

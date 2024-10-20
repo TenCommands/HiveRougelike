@@ -1,4 +1,4 @@
-const { sendNotif, notifTitle, notifDescription, notifImage, notifTime } = require("./func");
+import { sendNotif, notifTitle, notifDescription, notifImage, notifTime } from "./func";
 
 let mod = new HudModule("hrl_notif","HRL: Notification","Notifications for the Hive Roguelike",0,true);
 

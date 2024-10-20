@@ -1,4 +1,4 @@
-const { sendNotif, notifTitle, notifDescription, notifImage, notifTime } = require("./func");
+import { sendNotif, notifTitle, notifDescription, notifImage, notifTime } from "./notif/func";
 
 //client.on("load-script", e => {
 //    clientMessage(e.scriptName)
