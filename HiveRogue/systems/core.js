@@ -1,6 +1,6 @@
 //const notif = require("notif.js");
 
-let core = new Module("hrl_core","HRL: Hive Rougelike Core","Enables the Hive Rougelike mode",1);
+let core = new Module("hrl_core","HRL: Hive Roguelike Core","Enables the Hive Rougelike mode",1);
 
 client.getModuleManager().registerModule(core);
 

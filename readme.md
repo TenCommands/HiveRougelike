@@ -1,5 +1,5 @@
 ## Description
-Turning Hive Bedwars into a rougelike. This plugin is an extremely complicated and probably the most advanced plugin to ever be made for [Latite Client](https://latite.net) other than maybe [GlaxiteUtils](https://github.com/LatiteScripting/Scripts/tree/master/Plugins/GalaxiteUtils). This plugin aims to increase the skill ceiling of Hive Bedwars by turning it into a rougelike (more accuretly a rougelite) where you start out by not being able to buy any items at all and must just work with your fist. However as you play more games and complete more actions you will become able to buy more items and upgrades along with being able to unlock special events that will allow you to get more points and unlock more items.
+Turning Hive Bedwars into a roguelike. This plugin is an extremely complicated and probably the most advanced plugin to ever be made for [Latite Client](https://latite.net) other than maybe [GlaxiteUtils](https://github.com/LatiteScripting/Scripts/tree/master/Plugins/GalaxiteUtils). This plugin aims to increase the skill ceiling of Hive Bedwars by turning it into a roguelike or a roguelite depending on what you choose.
 
 ---
 ## Requirements
