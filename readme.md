@@ -44,7 +44,7 @@ Turning Hive Bedwars into a roguelike. This plugin is an extremely complicated a
     - :white_square_button: Advertising & Sharing
         - :white_square_button: Content Creators
         - :white_square_button: Discord Servers
-        - :ballot_box_with_check ~~Devlog??~~ Promo Video
+        - :ballot_box_with_check: ~~Devlog??~~ Promo Video
     - :white_square_button: Releasing
         - :white_square_button: Get on the official [Latite Plugin](https://latite.net/plugins) list?
     - :white_square_button: Github
