@@ -1,12 +1,5 @@
 import { sendNotif, notifTitle, notifDescription, notifImage, notifTime } from "./notif/func";
 
-//client.on("load-script", e => {
-//    clientMessage(e.scriptName)
-//    //if(client.getModuleManager().getModuleByName("hrl_core").isEnabled()){
-//    //    clientMessage("core enabled")
-//    //}
-//})
-
 var _a, _b;
 
 const playerName = (_a = game.getLocalPlayer()) === null || _a === void 0 ? void 0 : _a.getName();
