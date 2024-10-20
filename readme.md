@@ -11,7 +11,7 @@ Turning Hive Bedwars into a roguelike. This plugin is an extremely complicated a
 
 :ballot_box_with_check: = in progress
 #
-- :ballot_box_with_check Roguelite mode
+- :ballot_box_with_check: Roguelite mode
     - :white_square_button: Front-end
         - :ballot_box_with_check: Point Shop GUI
         - :white_square_button: Settings GUI
